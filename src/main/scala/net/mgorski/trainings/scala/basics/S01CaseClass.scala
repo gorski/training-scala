@@ -1,7 +1,7 @@
 package net.mgorski.trainings.scala.basics
 
 /**
-  * Case Class - basic syntax
+  * S01 : case class (only one default constructor)
   */
 case class S01CaseClass(cc: BigDecimal) {
 
@@ -22,4 +22,10 @@ case class S01CaseClass(cc: BigDecimal) {
   }
 
 
+}
+
+object S01Run {
+  def main(args: Array[String]) {
+    S01CaseClass(1).printValue
+  }
 }

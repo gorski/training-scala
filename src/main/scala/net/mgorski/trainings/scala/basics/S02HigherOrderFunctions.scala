@@ -1,7 +1,7 @@
 package net.mgorski.trainings.scala.basics
 
 /**
-  * Created by ski on 04/10/2017.
+  * S02 : Higher order functions (function in function)
   */
 object S02HigherOrderFunctions {
 
@@ -22,7 +22,6 @@ object S02HigherOrderFunctions {
     go(n, 1)
   }
 
-
   def fib(n: Int): Int = {
     @annotation.tailrec
     def loop(n: Int, prev: Int, cur: Int): Int =
@@ -30,5 +29,6 @@ object S02HigherOrderFunctions {
       else loop(n - 1, cur, prev + cur)
     loop(n, 0, 1)
   }
+
 
 }
